@@ -1,6 +1,6 @@
-FROM golang:latest
+FROM ubuntu:22.04
 
-RUN sudo apt-get install python3-pip -y && \
-    sudo pip install pip -U -q && \
-    sudo pip install mycli -q && \
+RUN apt -y install python3-pip curl && \
+    pip install pip -U -q && \
+    pip install mycli -q && \
     curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh
