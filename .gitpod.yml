@@ -8,7 +8,8 @@ image:
 tasks:
   - name: TiUP init playground
     command: |
-      $HOME/.tiup/bin/tiup playground
+      source /root/.profile
+      tiup playground
   - name: Terminal
     command: |
       clear
