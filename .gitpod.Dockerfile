@@ -1,4 +1,4 @@
-FROM gitpod/workspace-go
+FROM golang:latest
 
 RUN sudo apt-get install python3-pip -y && \
     sudo pip install pip -U -q && \
